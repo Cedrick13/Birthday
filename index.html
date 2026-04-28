@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday</title>
 
-    <!-- Link external CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Confetti Canvas -->
+    <canvas id="confetti"></canvas>
 
     <div class="card">
         <h1>🎉 Happy Birthday! 🎂</h1>
@@ -17,11 +19,8 @@
         <p id="message"></p>
     </div>
 
-    <script>
-        function showMessage() {
-            document.getElementById("message").innerHTML = "🎈 Enjoy your special day! 🎉";
-        }
-    </script>
+    <!-- Link external JS -->
+    <script src="script.js"></script>
 
 </body>
 </html>

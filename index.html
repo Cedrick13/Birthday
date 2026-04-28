@@ -12,12 +12,15 @@
     <!-- Confetti Canvas -->
     <canvas id="confetti"></canvas>
 
-    <div class="card">
-        <h1>🎉 Happy Birthday! 🎂</h1>
-        <p>Wishing you a day filled with happiness and a year filled with joy!</p>
-        <button onclick="showMessage()">Click Me 🎁</button>
-        <p id="message"></p>
+<div class="envelope-container" onclick="openEnvelope()">
+    <div class="envelope">
+        <div class="flap"></div>
+        <div class="letter">
+            <h1>🎉 Happy Birthday! 🎂</h1>
+            <p>Wishing you a day filled with happiness and a year filled with joy!</p>
+        </div>
     </div>
+</div>
 
     <!-- Link external JS -->
     <script src="script.js"></script>

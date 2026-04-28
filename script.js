@@ -50,3 +50,8 @@ window.addEventListener("resize", () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 });
+
+// Envelope animation
+function openEnvelope() {
+    document.querySelector(".envelope").classList.toggle("open");
+}

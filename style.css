@@ -52,3 +52,83 @@ button:hover {
     pointer-events: none;
     z-index: 0;
 }
+
+/* Envelope styles */
+.envelope-container {
+    cursor: pointer;
+    position: relative;
+}
+
+.envelope {
+    width: 300px;
+    height: 200px;
+    background: #ddd;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Top flap */
+.flap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ccc;
+    clip-path: polygon(0 0, 50% 60%, 100% 0);
+    transition: transform 0.6s ease;
+    transform-origin: top;
+    z-index: 2;
+}
+
+/* Letter inside */
+.letter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    color: #333;
+    top: 100%;
+    left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.6s ease;
+}
+
+/* OPEN STATE */
+.envelope.open .flap {
+    transform: rotateX(180deg);
+}
+
+.envelope.open .letter {
+    top: 0;
+}
+
+/* Make envelope scale */
+.envelope {
+    width: 90vw;
+    max-width: 350px;
+    height: 220px;
+}
+
+/* Responsive text */
+.letter h1 {
+    font-size: clamp(20px, 5vw, 32px);
+}
+
+.letter p {
+    font-size: clamp(14px, 3.5vw, 18px);
+}
+
+/* Center everything nicely */
+.envelope-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Fix body for small screens */
+body {
+    padding: 10px;
+}

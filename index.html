@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Happy Birthday</title>
+
+    <!-- Link external CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <div class="card">
+        <h1>🎉 Happy Birthday! 🎂</h1>
+        <p>Wishing you a day filled with happiness and a year filled with joy!</p>
+        <button onclick="showMessage()">Click Me 🎁</button>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerHTML = "🎈 Enjoy your special day! 🎉";
+        }
+    </script>
+
 </body>
 </html>
